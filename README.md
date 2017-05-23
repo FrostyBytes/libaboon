@@ -9,3 +9,8 @@ supported). Cooperative multitasking is done by copying the current
 stack to and from non-contiguous buffer pages. This reduces the
 requirement for continuous stack pages (except for the initial program
 stack that will always hold the currently executing thread).
+
+Libaboon is intended to be directly included into a client program so
+that an executable program is produced in a single compilation
+step. With gcc, the option set `-nostartfiles -nostdlib
+-nodefaultlibs` suppresses the inclusion of default libraries.
