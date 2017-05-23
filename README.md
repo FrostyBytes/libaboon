@@ -14,3 +14,7 @@ Libaboon is intended to be directly included into a client program so
 that an executable program is produced in a single compilation
 step. With gcc, the option set `-nostartfiles -nostdlib
 -nodefaultlibs` suppresses the inclusion of default libraries.
+
+Libaboon is currently a bit fragile and does not work older versions
+of `gcc` still present in some Linux distributions. It is known to
+work with gcc 5.4.0.
