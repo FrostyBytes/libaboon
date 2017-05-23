@@ -5,7 +5,7 @@ A co-operative multitasking library for C that can replace the default
 lightweight `libc`, `libaboon` does not attempt to be compatible with
 the standard `C` library, but rather provides its own interface.
 
-`Libaboon` is a replacement for libc that supports multiple threads
+`Libaboon` is a replacement for `libc` that supports multiple threads
 through cooperative multitasking. It uses assembler blocks in `C`
 source code to provide a start symbol and system calls (only 64-bit
 `Linux` is supported). Cooperative multitasking is done by copying the
@@ -18,6 +18,6 @@ so that an executable program is produced in a single compilation
 step. With `gcc`, the option set `-nostartfiles -nostdlib
 -nodefaultlibs` suppresses the inclusion of default libraries.
 
-Libaboon is currently a bit fragile and does not work older versions
+`Libaboon` is currently a bit fragile and does not work older versions
 of `gcc` still present in some `Linux` distributions. It is known to
 work with `gcc 5.4.0`.
